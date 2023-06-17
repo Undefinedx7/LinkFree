@@ -32,7 +32,7 @@ export async function getStaticProps() {
   }
 
   if (data.users.length > 5) {
-    data.randUsers = data.users.sort(() => 0.5 - Math.random()).slice(0, 5);
+    data.randUsers = data.users.sort(() => 0.5 - Math.random()).slice(0, 10);
   } else {
     data.randUsers = data.users;
   }
